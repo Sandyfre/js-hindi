@@ -35,7 +35,38 @@ const myFunction = function(){
     
 }
 
-console.log(typeof myFunction);
+// console.log(typeof myFunction);
 
 
 // to be proficient in JS master objects and web events
+
+
+// +++++++++++++Stack and heap memory++++++++++++++++++ 
+
+let mySchoolName = "Sandeep Kumar Sutar"
+
+let myHomeName = mySchoolName
+ myHomeName = "Mantu"
+
+console.log(mySchoolName)
+console.log(myHomeName)
+
+// so in stack a copy is provided the original value is never changed.
+
+let userOne = {
+    name: "Sandeep KS",
+    Email: "abc@google.com",
+    upi: "Sewe@ybl"
+
+}
+let userTwo = userOne
+
+userOne.Email = "Sandeep@google.com"
+
+console.log(userOne.Email);
+console.log(userTwo.Email);
+
+// in heap the original reference is providede so if changed the original value is changed.
+
+
+
