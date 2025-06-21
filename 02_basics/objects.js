@@ -14,15 +14,25 @@ const jsuser = {
 
 
 }
-console.log(jsuser.Email);
-console.log(jsuser["Full Name"]);
-console.log(jsuser[Symbol]);
+// console.log(jsuser.Email);
+// console.log(jsuser["Full Name"]);
+// console.log(jsuser[Symbol]);
 
-jsuser.Email = "sandy@googly.com"
+// jsuser.Email = "sandy@googly.com"
 
 
 //  ========= part 2 ===========
 
+// this is a non singleton object
+// const nonSingletonObject = {}
 
+// below is a singleton object
+
+const tindeUser = new Object()
+tindeUser.name = "Sandeep"
+tindeUser.id = "12345"
+tindeUser.isLoggedIn = false
+
+// console.log(tindeUser);
 
 
